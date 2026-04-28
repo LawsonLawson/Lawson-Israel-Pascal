@@ -1,5 +1,4 @@
-/* CSS REST */
-
+/* CSS RESET */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -9,69 +8,238 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: "";
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-body{
-    background-color: black;
+
+
+
+
+
+
+/* FONTS */
+
+
+@font-face {
+  font-family: "Ubuntu-Sans";
+  src: url("./assets/fonts/Ubuntu_Sans/UbuntuSans-Italic-VariableFont_wdth\,wght.ttf") format("truetype"),
+       url("./assets/fonts/Ubuntu_Sans/UbuntuSans-VariableFont_wdth\,wght.ttf") format("truetype");
 }
 
-/* PAGE CONTAINER */
+
+
+/* GLOBAL STYLES */
+
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  background-color: black;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/images/mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px);
+  transform: scale(1.1);
+  z-index: -1;
+}
+
+/* LAYOUT */
+
+
 .page-container {
-    max-width: 1280px;
-    height: 90vh;
-    border-radius: 16px;
-    border: 1px solid cyan;
-    margin: 34.33px 128px 34.32px 128px;
-    display: flex;
+  width: 1280px;
+  height: 90vh;
+  border-radius: 16px;
+  border: 0.1px solid cyan;
+  margin: 34.33px 128px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* side bar */
-.side-bar {
-    border-left: 1px solid red;
-    height: 100%;
-    width: 22%;
-    border-radius: 16px;
-    margin: 0;
-}
-
-
-/* main content */
 .main-content {
-    border-left: 1px solid green;
-    height: 100%;
-    width: 78%;
-    margin: 0;
+  width: 78%;
+  border: 1px solid green;
+}
+
+/* SIDEBAR */
+
+
+.side-bar {
+  width: 22%;
+  height: 100%;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- Profile Section --- */
+
+.profile {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile img {
+  width: 160px;
+  height: 160px;
+  margin: 10px;
+  border-radius: 50%;
+  border: 3px solid cyan;
+}
+
+.profile h1 {
+  margin-top: 15px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+}
+
+.profile h2 {
+  margin-top: 5px;
+  font-size: 14px;
+  font-family: "Ubuntu-Sans", sans-serif;
+  line-height: 24px;
+  color: cyan;
+}
+
+/* --- Tech Stack Section --- */
+
+.tech-stack-container {
+  width: 90%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-stack-container h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-left: 60px; /* Note: Be careful with fixed large left margins inside small containers */
+  margin-right: 18px;
+  font-size: 14px;
+  line-height: 24px;
+  color: cyan;
+}
+
+.tech-stack {
+  width: 90%;
+  height: 90%;
+  margin-bottom: 40px;
+  border: 0.1px solid cyan;
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- Icons --- */
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  height: auto;
+  max-width: 90%;
+}
+
+.icon-box {
+  width: 40px;
+  height: 40px;
+  aspect-ratio: 1 / 1;
+  border: 2px solid cyan;
+  border-radius: 9px;
+  background-color: rgba(4, 18, 75, 0.357);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-box img {
+  width: 30px;
+  height: 30px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.icon-container img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+/* --- Sidebar Footer --- */
+
+.sidebar-footer {
+  width: 90%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icons {
+  width: 90%;
+  height: 90%;
+  margin-bottom: 50px;
+  border: 0.1px solid cyan;
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
