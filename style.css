@@ -80,7 +80,7 @@ body::before {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url("./assets/images/mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg");
+  background-image: url(./assets/images/background-image.jpg);
   background-size: cover;
   background-position: center;
   filter: blur(3px);
@@ -166,7 +166,7 @@ body::before {
 .tech-stack-container h3 {
   width: 100%;
   margin-bottom: 20px;
-  margin-left: 60px; /* Note: Be careful with fixed large left margins inside small containers */
+  margin-left: 60px;
   margin-right: 18px;
   font-size: 14px;
   line-height: 24px;
