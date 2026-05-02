@@ -2,7 +2,7 @@ const buttons = document.querySelectorAll(".tabs button");
 const tabs = document.querySelectorAll(".tab");
 
 
-// Function to switch tabs
+/* Function to switch tabs */
 function switchTab(tabId) {
  buttons.forEach(b => b.classList.remove("active"));
  tabs.forEach(t => t.classList.remove("active"));
@@ -27,7 +27,7 @@ buttons.forEach(btn => {
 });
 
 
-// Handle page refresh
+/* Handle page refresh */
 window.addEventListener("load", () => {
  const hash = window.location.hash.replace("#", "");
  if (hash && document.getElementById(hash)) {
