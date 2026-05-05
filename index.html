@@ -1,409 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8" />
- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <title>Lawson Israel Pascal</title>
- <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lawson Israel Pascal</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 
 <body>
 
-
- <div class="page-container">
-
-
-   <!-- SIDEBAR -->
-   <aside class="side-bar">
-
-
-     <!-- PROFILE -->
-     <div class="profile">
-       <img src="./assets/images/myAvatar.png" alt="avatar" />
-       <h1>Lawson Israel Pascal</h1>
-       <h2>Backend Engineer</h2>
-     </div>
-
-
-     <!-- TECH STACK -->
-     <div class="tech-stack-container">
-       <div class="tech-stack">
-         <h3>&lt;Daily Drivers /&gt;</h3>
-
-
-         <div class="icon-grid">
-           <div class="icon-box"><img src="./assets/images/tech_track_icons/Python.svg" alt="Python" />
-             <span class="icon-label">Python</span>
-           </div>
-           <div class="icon-box"><img src="./assets/images/tech_track_icons/Django.svg" alt="Django" />
-             <span class="icon-label">Django</span>
-           </div>
-           <div class="icon-box"><img src="./assets/images/tech_track_icons/PostgresSQL.svg" alt="PostgresSQL" />
-             <span class="icon-label">PostgresSQL</span>
-           </div>
-           <div class="icon-box"><img src="./assets/images/tech_track_icons/Postman.svg" alt="Postman" />
-             <span class="icon-label">Postman</span>
-           </div>
-           <div class="icon-box"><img src="./assets/images/tech_track_icons/Kotlin.svg" alt="Kotlin" />
-             <span class="icon-label">Kotlin</span>
-           </div>
-           <div class="icon-box"><img src="./assets/images/tech_track_icons/Ktor.svg" alt="Ktor" />
-             <span class="icon-label">Ktor</span>
-           </div>
-           <div class="icon-box"><img src="./assets/images/tech_track_icons/Git.svg" alt="Git" />
-             <span class="icon-label">Git</span>
-           </div>
-           <div class="icon-box"><img src="./assets/images/tech_track_icons/Docker.svg" alt="Docker" />
-             <span class="icon-label">Docker</span>
-           </div>
-         </div>
-
-
-       </div>
-     </div>
-
-
-     <!-- CONTACT -->
-     <div class="sidebar-footer">
-       <div class="footer-icons-container">
-         <div class="card contact-sidebar-card">
-
-
-           <div class="item">
-             <div class="footer-icon-box"><img src="./assets/images/tech_track_icons/Gmail_icon_(2020).svg" alt="mail" class="Gmail" /></div>
-             <a href="mailto:lawsonlawson404@gmail.com" target="_blank">lawsonlawson404@gmail.com</a>
-           </div>
-
-
-           <div class="item">
-             <div class="footer-icon-box"><img src="./assets/images/tech_track_icons/github-color-svgrepo-com.svg" alt="Github" class="icon" /></div>
-             <a href="https://github.com/lawsonlawson" target="_blank">Lawson Lawson</a>
-           </div>
-
-
-           <div class="item">
-             <div class="footer-icon-box"><img src="./assets/images/tech_track_icons/LinkedIn.svg" alt="Git" class="Linkedin" /></div>
-             <a href="https://www.linkedin.com/in/israel-pascal-lawson/" target="_blank">israel-pascal-lawson</a>
-           </div>
-
-
-         </div>
-       </div>
-     </div>
-
-
-   </aside>
-
-
-   <!-- MAIN CONTENT -->
- <main class="main-content">
-
-
-   <!-- TERMINAL HEADER -->
-   <div class="terminal-header">
-
-
-     <div class="window-controls">
-       <span class="dot red"></span>
-       <span class="dot yellow"></span>
-       <span class="dot green"></span>
-     </div>
-
-
-     <div class="tabs">
-       <button data-tab="about">>_About</button>
-       <button data-tab="projects">>_Projects</button>
-       <button data-tab="stack">>_StackTrace</button>
-       <button data-tab="contact">>_Contact</button>
-     </div>
-
-
-   </div>
-
-
-   <!-- CONTENT -->
-   <div class="content-area">
-
-
-     <!-- ABOUT -->
-     <section id="about" class="tab active">
-       <h3 class="command">> whoami</h3>
-       <div class="faded-line"></div>
-
-
-       <div class="card mb-24">
-         <p class="card-text">
-           I design and build robust backend systems. From crafting reliable APIs to architecting scalable services that power real-world applications, I focus on performance and reliability.
-         </p>
-
-
-         <p class="card-text">
-           Passionate about clean architecture, test-driven development, and solving complex problems through elegant code.
-         </p>
-
-
-         <p class="card-text no-margin">
-           Currently pursuing a degree in Mobile Computing, expanding into mobile app development and bridging powerful backends with seamless user experiences to create full-stack solutions.
-         </p>
-       </div>
-
-
-       <div class="code-box">
-        <pre class="json-text">
-        const engineer = {
-        name: "Lawson Israel Pascal",
-        role: "Backend Engineer",
-        interests: ["Backend", "Mobile Dev"]
-        };
-        </pre>
-       </div>
-     </section>
-
-
-     <!-- PROJECTS -->
-     <section id="projects" class="tab">
-       <h3 class="command">> ls -la ./projects</h3>
-       <div class="faded-line"></div>
-
-
-       <!-- Project Card 1 -->
-       <div class="card mb-24">
-         <div class="project-container">
-           <!-- Icon Container -->
-           <div class="project-icon-box">
-             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.82 2.96 0l3.07-3.08"></path></svg>
-           </div>
-
-
-           <!-- Content For Project 1 -->
-           <div class="project-info">
-             <div class="project-header">
-               <h4 class="project-title">GiveAid Donation Platform</h4>
-               <span class="project-tag">Repository</span>
-             </div>
-
-
-             <p class="project-desc">
-               A secure donation management platform built to facilitate transparent online contributions. Implements user authentication, campaign management, and donation tracking through a RESTful backend architecture.
-             </p>
-
-
-             <!-- Tech Badges For Project 1 -->
-             <div class="badge-container">
-               <span class="tech-badge">Django</span>
-               <span class="tech-badge">PostgreSQL</span>
-               <span class="tech-badge">REST API</span>
-               <span class="tech-badge">JWT Authentication</span>
-             </div>
-
-
-             <!-- GitHub Link  For Project 1 -->
-             <a href="https://github.com/thenoblet/giveaid_project" target="_blank" class="btn-github">
-               <span>View on GitHub</span>
-             </a>
-           </div>
-         </div>
-       </div>
-
-
-       <!-- Project Card 2 -->
-       <div class="card mb-24">
-         <div class="project-container">
-           <div class="project-icon-box">
-             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"></path><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path><path d="m3.27 6.96 8.73 5.05 8.73-5.05"></path><path d="M12 22.08V12"></path></svg>
-           </div>
-
-           <!-- Content For Project 2 -->
-           <div class="project-info">
-             <div class="project-header">
-               <h4 class="project-title">InventoryWise</h4>
-               <span class="project-tag">Repository</span>
-             </div>
-             <p class="project-desc">
-               A backend inventory management system designed to track products, stock levels, and business operations. Provides structured CRUD APIs for managing inventory data with a focus on data integrity and efficiency.
-             </p>
-             <div class="badge-container">
-               <span class="tech-badge">Django</span>
-               <span class="tech-badge">PostgreSQL</span>
-               <span class="tech-badge">REST API</span>
-               <span class="tech-badge">CRUD Operations</span>
-             </div>
-
-             <!-- GitHub Link  For Project 2 -->
-             <a href="https://github.com/thenoblet/inventorywise" target="_blank" class="btn-github">
-               <span>View on GitHub</span>
-             </a>
-           </div>
-         </div>
-       </div>
-
-
-       <!-- Project Card 3 -->
-       <div class="card mb-24">
-         <div class="project-container">
-           <div class="project-icon-box">
-             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2"></rect><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path><path d="M12 12h.01"></path></svg>
-           </div>
-
-           <!-- Content For Project 3 -->
-           <div class="project-info">
-             <div class="project-header">
-               <h4 class="project-title">Portfolio Project</h4>
-               <span class="project-tag">Repository</span>
-             </div>
-             <p class="project-desc">
-               A fully responsive developer portfolio system featuring a custom UI built with HTML, CSS, and JavaScript, integrated with a backend messaging service that handles user contact submissions. Implements form validation, API communication, and structured data handling for incoming messages.
-             </p>
-             <div class="badge-container">
-               <span class="tech-badge">HTML</span>
-               <span class="tech-badge">CSS</span>
-               <span class="tech-badge">JavaScript</span>
-               <span class="tech-badge">Django</span>
-             </div>
-
-             <!-- GitHub Link  For Project 3 -->
-             <a href="https://github.com/LawsonLawson/Lawson-Israel-Pascal" target="_blank" class="btn-github">
-               <span>View on GitHub</span>
-             </a>
-           </div>
-         </div>
-       </div>
-     </section>
-
-
-     <!-- STACKTRACE -->
-     <section id="stack" class="tab">
-       <h3 class="command">> cat resume.log</h3>
-       <div class="faded-line"></div>
-
-
-       <!-- Experience Section -->
-       <h4 class="stack-header">Experience</h4>
-
-
-       <!-- Job Entry 1 -->
-       <div class="card mb-24">
-         <div class="stack-item-header">
-           <div>
-             <h5 class="stack-item-title">Data Review & Online Research Assistant</h5>
-             <p class="stack-item-subtitle">Ambasaki Consults</p>
-           </div>
-           <span class="stack-item-date">Mar 2026 - Present</span>
-         </div>
-
-
-         <ul class="stack-list">
-           <li>Conduct online research to collect, verify, and validate structured data entries based on project guidelines.</li>
-           <li>Ensure high attention to detail when reviewing and matching products to correct categories and specifications.</li>
-           <li>Maintain accuracy and consistency in daily data tasks while following strict quality standards and instructions.</li>
-         </ul>
-       </div>
-
-
-       <!-- Job Entry 2 -->
-       <div class="card mb-24">
-         <div class="stack-item-header">
-           <div>
-             <h5 class="stack-item-title">Backend Engineer</h5>
-             <p class="stack-item-subtitle">GiveAid Donation Platform — ALX Software Engineering Final Project</p>
-           </div>
-           <span class="stack-item-date">2025</span>
-         </div>
-
-
-         <ul class="stack-list">
-           <li>Collaborated in a team of 3 to design and build a full-stack donation platform to facilitate secure and transparent online contributions.</li>
-           <li>Developed RESTful backend APIs using Django to handle user authentication, donation processing, and campaign management.</li>
-           <li>Worked in an agile team environment, contributing to system design, backend logic, debugging, and integration with frontend components.</li>
-         </ul>
-       </div>
-
-
-       <!-- Education Section -->
-       <h4 class="stack-header mt-32">Education</h4>
-
-
-       <div class="card">
-         <div class="stack-item-header no-margin">
-           <div>
-             <h5 class="stack-item-title">Software Engineer - Backend Specialization</h5>
-             <p class="stack-item-subtitle">ALX Software Engineering</p>
-           </div>
-           <span class="stack-item-date">Nov 2024 - Nov 2025 <button class="btn-certificate-SE" onclick="window.open('https://savanna.alxafrica.com/certificates/LsH3SfzPMZ', '_blank')">View Certificate</button></span>
-         </div>
-
-         <div class="stack-item-header no-margin">
-           <div>
-             <h5 class="stack-item-title">Professional Development Skills</h5>
-             <p class="stack-item-subtitle">ALX Foundations in Specialization</p>
-           </div>
-           <span class="stack-item-date">Feb 2024 - Nov 2025 <button class="btn-certificate-SE" onclick="window.open('https://savanna.alxafrica.com/certificates/MTx3JGrcSm', '_blank')">View Certificate</button></span>
-         </div>
-
-         <div class="stack-item-header no-margin">
-           <div>
-             <h5 class="stack-item-title">BSc Mobile Computing</h5>
-             <p class="stack-item-subtitle">Ghana Communications Technology University</p>
-           </div>
-           <span class="stack-item-date">Feb 2025 - Present </span>
-         </div>
-       </div>
-     </section>
-
-
-     <!-- CONTACT -->
-     <section id="contact" class="tab">
-       <h3 class="command">> echo "Get in touch"</h3>
-       <div class="faded-line"></div>
-
-
-       <div class="card">
-         <p class="contact-text">
-           Have a project in mind or just want to say hi? My inbox is always open. Drop me a message and I'll get back to you as soon as possible!
-         </p>
-
-
-         <form class="contact-form">
-           <!-- Name Field -->
-           <div class="form-field">
-             <label class="form-label">Name</label>
-             <input type="text" placeholder="Jane Doe" class="form-input" />
-           </div>
-
-
-           <!-- Email Field -->
-           <div class="form-field">
-             <label class="form-label">Email</label>
-             <input type="email" placeholder="jane@example.com" class="form-input" />
-           </div>
-
-
-           <!-- Message Field -->
-           <div class="form-field">
-             <label class="form-label">Message</label>
-             <textarea rows="5" placeholder="Your message..." class="form-input textarea"></textarea>
-           </div>
-
-
-           <!-- Submit Button -->
-           <button type="submit" class="btn-submit">
-             Send Message
-           </button>
-         </form>
-       </div>
-     </section>
-
-
-   </div>
-
-
- </main>
-
-
-</div>
-
-
-<script src="script.js"></script>
+    <div class="page-container">
+
+        <!-- SIDEBAR -->
+        <aside class="side-bar">
+
+            <!-- PROFILE -->
+            <div class="profile">
+                <img src="./assets/images/myAvatar.png" alt="avatar" />
+                <h1>Lawson Israel Pascal</h1>
+                <h2>Backend Engineer</h2>
+            </div>
+
+
+            <!-- TECH STACK -->
+            <div class="tech-stack-container">
+                <div class="tech-stack">
+                    <h3>&lt;Daily Drivers /&gt;</h3>
+                    <div class="icon-grid">
+                        <div class="icon-box"><img src="./assets/images/tech_track_icons/Python.svg" alt="Python" />
+                            <span class="icon-label">Python</span>
+                        </div>
+                        <div class="icon-box"><img src="./assets/images/tech_track_icons/Django.svg" alt="Django" />
+                            <span class="icon-label">Django</span>
+                        </div>
+                        <div class="icon-box"><img src="./assets/images/tech_track_icons/PostgresSQL.svg" alt="PostgresSQL" />
+                            <span class="icon-label">PostgresSQL</span>
+                        </div>
+                        <div class="icon-box"><img src="./assets/images/tech_track_icons/Postman.svg" alt="Postman" />
+                            <span class="icon-label">Postman</span>
+                        </div>
+                        <div class="icon-box"><img src="./assets/images/tech_track_icons/Kotlin.svg" alt="Kotlin" />
+                            <span class="icon-label">Kotlin</span>
+                        </div>
+                        <div class="icon-box"><img src="./assets/images/tech_track_icons/Ktor.svg" alt="Ktor" />
+                            <span class="icon-label">Ktor</span>
+                        </div>
+                        <div class="icon-box"><img src="./assets/images/tech_track_icons/Git.svg" alt="Git" />
+                            <span class="icon-label">Git</span>
+                        </div>
+                        <div class="icon-box"><img src="./assets/images/tech_track_icons/Docker.svg" alt="Docker" />
+                            <span class="icon-label">Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CONTACT -->
+            <div class="sidebar-footer">
+                <div class="footer-icons-container">
+                    <div class="card contact-sidebar-card">
+                        <div class="item">
+                            <div class="footer-icon-box"><img src="./assets/images/tech_track_icons/Gmail_icon_(2020).svg" alt="mail" class="Gmail" /></div>
+                            <a href="mailto:lawsonlawson404@gmail.com" target="_blank">lawsonlawson404@gmail.com</a>
+                        </div>
+                        <div class="item">
+                            <div class="footer-icon-box"><img src="./assets/images/tech_track_icons/github-color-svgrepo-com.svg" alt="Github" class="icon" /></div>
+                            <a href="https://github.com/lawsonlawson" target="_blank">Lawson Lawson</a>
+                        </div>
+                        <div class="item">
+                            <div class="footer-icon-box"><img src="./assets/images/tech_track_icons/LinkedIn.svg" alt="Git" class="Linkedin" /></div>
+                            <a href="https://www.linkedin.com/in/israel-pascal-lawson/" target="_blank">israel-pascal-lawson</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- TERMINAL HEADER -->
+            <div class="terminal-header">
+                <div class="window-controls">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="tabs">
+                    <button data-tab="about">>_About</button>
+                    <button data-tab="projects">>_Projects</button>
+                    <button data-tab="stack">>_StackTrace</button>
+                    <button data-tab="contact">>_Contact</button>
+                </div>
+            </div>
+
+            <!-- CONTENT -->
+            <div class="content-area">
+
+
+                <!-- ABOUT -->
+                <section id="about" class="tab active">
+                    <h3 class="command">> whoami</h3>
+                    <div class="faded-line"></div>
+                    <div class="card mb-24">
+                        <p class="card-text">I design and build robust backend systems. From crafting reliable APIs to architecting scalable services that power real-world applications, I focus on performance and reliability.
+                        </p>
+                        <p class="card-text">Passionate about clean architecture, test-driven development, and solving complex problems through elegant code.
+                        </p>
+                        <p class="card-text no-margin">Currently pursuing a degree in Mobile Computing, expanding into mobile app development and bridging powerful backends with seamless user experiences to create full-stack solutions.
+                        </p>
+                    </div>
+                    <div class="code-box">
+                        <pre class="json-text">
+                        const engineer = {
+                        name: "Lawson Israel Pascal",
+                        role: "Backend Engineer",
+                        interests: ["Backend", "Mobile Dev"]
+                        };
+                        </pre>
+                    </div>
+                </section>
+
+
+                <!-- PROJECTS -->
+                <section id="projects" class="tab">
+                    <h3 class="command">> ls -la ./projects</h3>
+                    <div class="faded-line"></div>
+
+                    <!-- Project Card 1 -->
+                    <div class="card mb-24">
+                        <div class="project-container">
+
+                            <!-- Icon Container -->
+                            <div class="project-icon-box">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.82 2.96 0l3.07-3.08"></path>
+                                </svg>
+                            </div>
+
+                            <!-- Content For Project 1 -->
+                            <div class="project-info">
+                                <div class="project-header">
+                                    <h4 class="project-title">GiveAid Donation Platform</h4>
+                                    <span class="project-tag">Repository</span>
+                                </div>
+                                <p class="project-desc">A secure donation management platform built to facilitate transparent online contributions. Implements user authentication, campaign management, and donation tracking through a RESTful backend architecture.
+                                </p>
+
+                                <!-- Tech Badges For Project 1 -->
+                                <div class="badge-container">
+                                    <span class="tech-badge">Django</span>
+                                    <span class="tech-badge">PostgreSQL</span>
+                                    <span class="tech-badge">REST API</span>
+                                    <span class="tech-badge">JWT Authentication</span>
+                                </div>
+
+                                <!-- GitHub Link  For Project 1 -->
+                                <a href="https://github.com/thenoblet/giveaid_project" target="_blank" class="btn-github">
+                                    <span>View on GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="card mb-24">
+                        <div class="project-container">
+                            <div class="project-icon-box">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"></path><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path><path d="m3.27 6.96 8.73 5.05 8.73-5.05"></path><path d="M12 22.08V12"></path></svg>
+                            </div>
+
+                            <!-- Content For Project 2 -->
+                            <div class="project-info">
+                                <div class="project-header">
+                                    <h4 class="project-title">InventoryWise</h4>
+                                    <span class="project-tag">Repository</span>
+                                </div>
+                                <p class="project-desc">A backend inventory management system designed to track products, stock levels, and business operations. Provides structured CRUD APIs for managing inventory data with a focus on data integrity and efficiency.
+                                </p>
+                                <div class="badge-container">
+                                    <span class="tech-badge">Django</span>
+                                    <span class="tech-badge">PostgreSQL</span>
+                                    <span class="tech-badge">REST API</span>
+                                    <span class="tech-badge">CRUD Operations</span>
+                                </div>
+
+                                <!-- GitHub Link  For Project 2 -->
+                                <a href="https://github.com/thenoblet/inventorywise" target="_blank" class="btn-github">
+                                    <span>View on GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="card mb-24">
+                        <div class="project-container">
+                            <div class="project-icon-box">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2"></rect><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path><path d="M12 12h.01"></path>
+                                </svg>
+                            </div>
+
+                            <!-- Content For Project 3 -->
+                            <div class="project-info">
+                                <div class="project-header">
+                                    <h4 class="project-title">Portfolio Project</h4>
+                                    <span class="project-tag">Repository</span>
+                                </div>
+                                <p class="project-desc">A fully responsive developer portfolio system featuring a custom UI built with HTML, CSS, and JavaScript, integrated with a backend messaging service that handles user contact submissions. Implements form validation, API communication, and structured data handling for incoming messages.
+                                </p>
+                                <div class="badge-container">
+                                    <span class="tech-badge">HTML</span>
+                                    <span class="tech-badge">CSS</span>
+                                    <span class="tech-badge">JavaScript</span>
+                                    <span class="tech-badge">Django</span>
+                                </div>
+
+                                <!-- GitHub Link  For Project 3 -->
+                                <a href="https://github.com/LawsonLawson/Lawson-Israel-Pascal" target="_blank" class="btn-github">
+                                    <span>View on GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- STACKTRACE -->
+                <section id="stack" class="tab">
+                    <h3 class="command">> cat resume.log</h3>
+                    <div class="faded-line"></div>
+
+                    <!-- Experience Section -->
+                    <h4 class="stack-header">Experience</h4>
+
+                    <!-- Job Entry 1 -->
+                    <div class="card mb-24">
+                        <div class="stack-item-header">
+                            <div>
+                                <h5 class="stack-item-title">Data Review & Online Research Assistant</h5>
+                                <p class="stack-item-subtitle">Ambasaki Consults</p>
+                            </div>
+                            <span class="stack-item-date">Mar 2026 - Present</span>
+                        </div>
+                        <ul class="stack-list">
+                            <li>Conduct online research to collect, verify, and validate structured data entries based on project guidelines.</li>
+                            <li>Ensure high attention to detail when reviewing and matching products to correct categories and specifications.</li>
+                            <li>Maintain accuracy and consistency in daily data tasks while following strict quality standards and instructions.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job Entry 2 -->
+                    <div class="card mb-24">
+                        <div class="stack-item-header">
+                            <div>
+                                <h5 class="stack-item-title">Backend Engineer</h5>
+                                <p class="stack-item-subtitle">GiveAid Donation Platform — ALX Software Engineering Final Project</p>
+                            </div>
+                            <span class="stack-item-date">2025</span>
+                        </div>
+                        <ul class="stack-list">
+                            <li>Collaborated in a team of 3 to design and build a full-stack donation platform to facilitate secure and transparent online contributions.</li>
+                            <li>Developed RESTful backend APIs using Django to handle user authentication, donation processing, and campaign management.</li>
+                            <li>Worked in an agile team environment, contributing to system design, backend logic, debugging, and integration with frontend components.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Education Section -->
+                    <h4 class="stack-header mt-32">Education</h4>
+                    <div class="card">
+                        <div class="stack-item-header no-margin">
+                            <div>
+                                <h5 class="stack-item-title">Software Engineer - Backend Specialization</h5>
+                                <p class="stack-item-subtitle">ALX Software Engineering</p>
+                            </div>
+                            <span class="stack-item-date">Nov 2024 - Nov 2025 <button class="btn-certificate-SE" onclick="window.open('https://savanna.alxafrica.com/certificates/LsH3SfzPMZ', '_blank')">View Certificate</button>
+                            </span>
+                        </div>
+                        <div class="stack-item-header no-margin">
+                            <div>
+                                <h5 class="stack-item-title">Professional Development Skills</h5>
+                                <p class="stack-item-subtitle">ALX Foundations in Specialization</p>
+                            </div>
+                            <span class="stack-item-date">Feb 2024 - Nov 2025 <button class="btn-certificate-SE" onclick="window.open('https://savanna.alxafrica.com/certificates/MTx3JGrcSm', '_blank')">View Certificate</button>
+                            </span>
+                        </div>
+                        <div class="stack-item-header no-margin">
+                            <div>
+                                <h5 class="stack-item-title">BSc Mobile Computing</h5>
+                                <p class="stack-item-subtitle">Ghana Communications Technology University</p>
+                            </div>
+                            <span class="stack-item-date">Feb 2025 - Present </span>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- CONTACT -->
+                <section id="contact" class="tab">
+                    <h3 class="command">> echo "Get in touch"</h3>
+                    <div class="faded-line"></div>
+                    <div class="card">
+                        <p class="contact-text">
+                        Have a project in mind or just want to say hi? My inbox is always open. Drop me a message and I'll get back to you as soon as possible!
+                        </p>
+                        <form class="contact-form">
+
+                            <!-- Name Field -->
+                            <div class="form-field">
+                                <label class="form-label">Name</label>
+                                <input type="text" placeholder="Jane Doe" class="form-input" />
+                            </div>
+                            <!-- Email Field -->
+                            <div class="form-field">
+                                <label class="form-label">Email</label>
+                                <input type="email" placeholder="jane@example.com" class="form-input" />
+                            </div>
+
+                            <!-- Message Field -->
+                            <div class="form-field">
+                                <label class="form-label">Message</label>
+                                <textarea rows="5" placeholder="Your message..." class="form-input textarea"></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn-submit">Send Message</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+
+
+        </main>
+
+
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
