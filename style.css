@@ -24,8 +24,14 @@ body::before {
     filter: blur(4px);
     transform: scale(1.1);
     z-index: -1;
+    overflow-x: hidden;
 }
 
+
+body, html {
+    height: 100%;
+    overflow: hidden;
+}
 
 /* FONTS */
 @font-face {
@@ -844,7 +850,120 @@ body::before {
 
 
  .profile img {
-     width: 120px;
-     height: 120px;
+     width: 100px;
+     height: 100px;
  }
+}
+
+
+/* ================= MOBILE SOCIALS ================= */
+@media (max-width: 1020px) {
+
+    .mobile-social-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .social-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .social-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .social-item .footer-icon-box {
+        width: 50px;
+        height: 50px;
+    }
+
+    .social-item .footer-icon-box img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .social-item a:hover {
+        color: #22D3EE;
+    }
+
+    .copyright {
+        margin-top: 10px;
+    }
+
+    .copyright p {
+        font-size: 12px;
+        color: #6B7280;
+        font-family: 'JetBrains Mono', monospace;
+    }
+
+    html, body {
+        overflow: auto;
+        height: auto;
+    }
+}
+
+
+/* ================= DUPLICATION CONTROL ================= */
+.mobile-only {
+    display: none;
+}
+
+/* ================= MOBILE BEHAVIOR ================= */
+@media (max-width: 1020px) {
+    .desktop-only {
+        display: none !important;
+    }
+    .mobile-only {
+        display: block;
+    }
+    .tab {
+        display: block !important;
+        margin-bottom: 32px;
+    }
+    .terminal-header {
+        display: none;
+    }
+    .profile-section {
+        margin-bottom: 32px;
+        margin-top: 12px;
+    }
+    .tech-stack {
+        margin-bottom: 32px;
+    }
+}
+
+.desktop-copyright {
+    margin-top: auto; /* pushes it to bottom of sidebar */
+    text-align: center;
+    padding-top: 16px;
+}
+
+/* ================= DESKTOP COPYRIGHT (FIXED CORNER) ================= */
+.desktop-copyright {
+    position: fixed;
+    bottom: 1px;
+    right: 16px;
+    padding: 4px 5px;
+
+    z-index: 9999;
+
+    pointer-events: none;
+}
+
+.desktop-copyright p {
+    margin: 0;
+    font-size: 11px;
+    color: #6B7280;
+    font-family: "JetBrains Mono", monospace;
 }
