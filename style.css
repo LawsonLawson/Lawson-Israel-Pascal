@@ -21,7 +21,11 @@ body::before {
     position: fixed;
     inset: 0;
     background: url(./assets/images/background-image.jpg) center/cover;
-    filter: blur(4px);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(1px);
     transform: scale(1.1);
     z-index: -1;
     overflow-x: hidden;
@@ -609,7 +613,7 @@ body, html {
 
 .btn-certificate-SE:hover {
     background: rgba(34, 211, 238, 0.2);
-    border-color: #31707a;
+    border-color: #22D3EE;
     color: white;
 }
 
@@ -911,6 +915,21 @@ body, html {
         overflow: auto;
         height: auto;
     }
+
+    body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url(./assets/images/background-image.jpg) center/cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(10px);
+    transform: scale(1.1);
+    z-index: -1;
+    overflow-x: hidden;
+}
 }
 
 
