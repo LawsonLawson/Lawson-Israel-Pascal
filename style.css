@@ -941,6 +941,10 @@ body, html {
     z-index: -1;
     overflow-x: hidden;
     }
+
+    .django-background-mobile {
+        filter: drop-shadow(0 0 5px #22D3EE);
+    }
 }
 
 
