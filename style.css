@@ -932,7 +932,8 @@ body, html {
     content: "";
     position: fixed;
     inset: 0;
-    background: url(./assets/images/background-image.jpg) center/cover;
+    /*background: url(./assets/images/background-image.jpg) center/cover;*/
+    background-color: black;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
