@@ -1,5 +1,3 @@
-# Lawson Israel Pascal — Portfolio
-
 This repository contains the source code for my personal developer portfolio.
 I built it as a place to introduce myself, share selected projects, show the
 tools I work with, and make it easier for people to get in touch.
@@ -67,11 +65,8 @@ The current source includes the contact form's HTML and styling, but it does
 not include JavaScript or a backend endpoint to process form submissions yet.
 The form is therefore a front-end interface only in this version.
 
-## Project links
 
-- [GitHub repository](https://github.com/LawsonLawson/Lawson-Israel-Pascal)
-- [GitHub profile](https://github.com/lawsonlawson)
-- [LinkedIn](https://www.linkedin.com/in/israel-pascal-lawson/)
+- [Site URL](https://lawsonlawson.github.io/Lawson-Israel-Pascal)
 
 ---
 
